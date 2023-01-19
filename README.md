@@ -1,7 +1,7 @@
 # LinuxPalvelimet-h1-Virtuaali-Linux
 
 ## Tiivistelmä
-  Tässä raportissa kerron, kuinka asensin Debianin Oraclen VirtualBox- ohjelmaan. Asennuksessa on käytetty apuna Install-debian-on-virtualbox ohjetta, jonka linkki löytyy lähteistä.
+Tässä raportissa kerron, kuinka asensin Debianin Oraclen VirtualBox- ohjelmaan. Asennuksessa on käytetty apuna Install-debian-on-virtualbox ohjetta, jonka linkki löytyy lähteistä.
   
 ## Lähtötilanne
       Virtuaaliohjelmisto:                Oraclen VM VirtualBox Manager
@@ -37,13 +37,15 @@ Seuraavaksi asennamme palomuurin tietoturvaa varten, joka onnistuu komennoilla:
     $ sudo apt-get -y install ufw
     $ sudo ufw enable
     
-Käynnistämme tietokoneen uudelleen komentojen ajamisen jälkeen, ja käyttöjärjestelmä on valmiina käytettäväksi 
+Käynnistämme tietokoneen uudelleen komentojen ajamisen jälkeen, ja käyttöjärjestelmä on valmiina käytettäväksi KLO 13.20
     
     
 ## Lopputulos
 
-     Lopetus KLO:      13.xx
-     Kokonais aika:    1h + 10min
+Onnistuneesti asennettu ja päivitetty Debian linux.
+
+     Lopetus KLO:                  13.20
+     Asennukseen käytetty aika:    1h + 11min
      
      
 
