@@ -6,10 +6,10 @@ Raportti debianin asentamisesta Oraclen VirtualBox- ohjelmaan.
   liibalaaba
   
 ## Lähtötilanne
-  Virtuaaliohjelmisto:                Oraclen VM VirtualBox Manager
-  Debianin Iso tiedosto:              debian-live-11.6.0-amd64-xfce+nonfree.iso.
-  Ohjelmiston Käyttöympäristö:        Microsoft Windows 10 Pro
-  KLO: 12.09
+      Virtuaaliohjelmisto:                Oraclen VM VirtualBox Manager
+      Debianin Iso tiedosto:              debian-live-11.6.0-amd64-xfce+nonfree.iso.
+      Ohjelmiston Käyttöympäristö:        Microsoft Windows 10 Pro
+      KLO: 12.09
 ## Tapahtumien kulku
   
 ## Lopputulos & Testit
