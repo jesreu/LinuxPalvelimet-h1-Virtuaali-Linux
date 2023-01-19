@@ -9,7 +9,7 @@
       Ohjelmiston Käyttöympäristö:        Microsoft Windows 10 Pro
       RAM:                                16gb
       Fyysista muistia:                   1 tera
-      KLO:                                12.09
+      Aloitus KLO:                        12.09
 ## Tapahtumien kulku
 Aloitin asennuksen käynnistämällä Oraclen VM VirtualBox Manager ohjelmiston. Klikkaamalla yläpalkin New vaihtoehtoa pääsen uuden virtuaalitietokoneen luonti valikkoon. Valikossa valitsen ensimmäisenä expert vaihtoehdon, jolla saan kaikki tarvittavat tiedot samalle näytölle. Asetan tietokoneen nimeksi DebianJesse, jonka ansiosta ohjelma automaattisesti määrittää type: Linux ja version: Debian (64-bit). Asetan järjestelmälle RAM käyttömuistia 8gb ja valitsen virtuaalisen kovalevyn luomisen. KLO: 12.20
       
@@ -23,9 +23,29 @@ Käyttöjärjestelmän loppuun asentamiseksi siirryn takaisin työpyödälle, su
       
 Partitions vaiheessa valitsen Erase disk, joka tyjentää kohde levyltä ylimääräisen tiedon pois ( koska kysessä on aikaisemmin luotu virtualkovalevy operaation ei pitäisi tuhota mitään tärkeitä tiedostoja). En valitse Encrypt optiota, koska kyseessä on virtuali kone. En koske Master Boot Record optioon, vaan jätän sen alkuperäiseen tilaan. Täytän User tiedot omalla nimelläni, jätän log-in nimen automaattiseksi, jonka järjestelmä luo syötetyn nimen mukaan. Muokaaan tietokoneen nimen Kissaksi, jotta tietokonetta on vaikeampi yhdistää minuun henkilönä. Asetan turvallisen salasanan ja en rastita ''log in automatically...'' vaihtoehtoa. KLO 12.56
       
-Järjestelmä antaa yhteenvedon valinnoissa, ja nyt voimme painaa install ruudun oikeasta alanurkasta (jos install ei näy voit painaa kokonäytön tilan päälle oikealta ylhäällä neliö painikkeela) Järjestelmä aloittaa asennuksen  12:58 -> ja lopettaa asennuksen 13.xx
-      
+Järjestelmä antaa yhteenvedon valinnoissa, ja nyt voimme painaa install ruudun oikeasta alanurkasta (jos install ei näy voit painaa kokonäytön tilan päälle oikealta ylhäällä neliö painikkeela). Järjestelmä aloittaa asennuksen  12:58 -> ja lopettaa asennuksen 13.03. Valitsen Restart now vaitoehdon asennuksen valmistuttua. KLO 13.04
+
+Nyt voimme kirjautua järjestelmään ensimmäisen kerran asennuksessa valitsemillamme käyttäjällä ja salasanalla. Kokeilen järjestelmän toimivuuden taas avaamalla YLEn nettisivut. Asennuksen valmistamiseksi ajan komennot:
+
+    $ sudo apt-get update
+    $ sudo apt-get -y dist-upgrade 
+
+Ensimmäinen komento tarkistaa puuttuvat päivitykset. Toinen komento päivitää kaiken mahdollisen. KLO 13.11
+
+Seuraavaksi asennamme palomuurin tietoturvaa varten, joka onnistuu komennoilla:
+
+    $ sudo apt-get -y install ufw
+    $ sudo ufw enable
+    
+Käynnistämme tietokoneen uudelleen komentojen ajamisen jälkeen, ja käyttöjärjestelmä on valmiina käytettäväksi 
+    
+    
 ## Lopputulos
+
+     Lopetus KLO:      13.xx
+     Kokonais aika:    1h + 10min
+     
+     
 
 ## Lähteet
     https://terokarvinen.com/2021/install-debian-on-virtualbox/
