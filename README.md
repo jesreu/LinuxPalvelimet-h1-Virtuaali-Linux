@@ -1,6 +1,6 @@
 # LinuxPalvelimet-h1-Virtuaali-Linux
 
-Raportti debianin asentamisesta Oraclen VirtualBoxiin
+Raportti debianin asentamisesta Oraclen VirtualBox- ohjelmaan.
 
 ## Tiivistelmä
   liibalaaba
